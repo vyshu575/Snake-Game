@@ -1,0 +1,98 @@
+body {
+    margin: auto;
+    padding: -10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff7f7;
+    background-image: url('https://wallpapers.com/images/hd/snake-game-1680-x-1050-background-6syqer1fr6oahe0b.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f7ececf4;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+    color: hwb(0 90% 7%);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: darkgreen;
+}
+
+h2 {
+    color: #e2ede5;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: hsl(122, 77%, 40%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#animatedImage {
+    max-width: 400px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.pulse {
+    animation: pulse-animation 0.5s ease; /* Apply the pulse animation */
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+}
+.instructions {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards; /* Fade in animation */
+    text-align: left;
+    background-color: hsl(114, 76%, 47%); /* Background color */
+    padding: 20px; /* Padding to create space around the content */
+    border-radius: 10px; /* Rounded corners for the box */
+    box-shadow: 0 0 10px rgba(9, 226, 23, 0.1); /* Shadow for the box */
+    margin-top: 20px; /* Add some space between image and instructions */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

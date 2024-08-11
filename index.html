@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snakey Slithey Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link  href="index.html">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Snakey Slithey Game!</h1>
+        <p>Prepare to immerse yourself in an exhilarating challenge!<br>Are you ready to challenge yourself?</p>
+        <div class="game-info">
+                        <div class="instructions" id="instructions">
+                <h2>Instructions</h2>
+                <li>Press 'W' to move upward</li>
+                <li>Press 'S' to move downward</li>
+                <li>Press 'A' to move left</li>
+                <li>Press 'D' to move right</li>
+            </div>
+        </div><br>
+        <button onclick="startGame()"><a href="https://gandlavyshnavi.itch.io/snakeyslithey">Start Game</a></button>
+    </div>
+
+    <script>
+        function animateImage() {
+            var image = document.getElementById("animatedImage");
+            image.classList.add("pulse"); // Add the CSS class to trigger animation
+            setTimeout(function() {
+                image.classList.remove("pulse"); // Remove the CSS class after animation completes
+            }, 500); // Adjust the timeout to match the animation duration
+        }
+    </script>
+</body>
+</html>
